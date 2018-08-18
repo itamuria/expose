@@ -1,0 +1,15 @@
+Package: expose
+Type: Package
+Title: Multiple effects of chemicals in Environmental Epidemiology
+Version: 0.0.002
+Author: person("Ibon", "Tamayo", email = "ibontama@gmail.com", role = c("aut", "cre"))
+Maintainer: Ibon Tamayo <itamuria@gmail.com>
+Description: An R Package for Estimating Individual and Average Joint Effects of Chemical Mixtures, 
+    Dose-Response Relationships, and Potential Interactions in Environmental Epidemiology
+License: Artistic 2.0
+Encoding: UTF-8
+LazyData: true
+Imports:
+    dplyr,
+    ggplot2
+RoxygenNote: 6.0.1
