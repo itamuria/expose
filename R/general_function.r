@@ -50,7 +50,7 @@ general_function <- function(dataset, exposures, confounders,
             h <- h + 1
             n2 <- n + N
             newdata[n:(n2 - 1), bat] <- delta[bi]
-            laburpencc <- c(laburpencc, "CC", exposures[bat], delta[bi], n, (n2 - 1))
+            laburpencc <- c(laburpencc, "ACE", exposures[bat], delta[bi], n, (n2 - 1))
             n <- n2
         }
     }
@@ -182,13 +182,13 @@ general_function <- function(dataset, exposures, confounders,
             n2 <- n + N
             newdata_it[n:(n2 - 1), ex] <- delta[1]
             newdata_it[n:(n2 - 1), ex2] <- delta[1]
-            laburpenite <- c(laburpenite, paste0("ITE_", var_tot[ex]), var_tot[ex2], 0, n, (n2 - 1))
+            laburpenite <- c(laburpenite, paste0("ITE_", var_tot[ex]), var_tot[ex2], 00, n, (n2 - 1))
             n <- n2
             n2 <- n + N
             h <- h + 1
             newdata_it[n:(n2 - 1), ex] <- delta[1]
             newdata_it[n:(n2 - 1), ex2] <- delta[2]
-            laburpenite <- c(laburpenite, paste0("ITE_", var_tot[ex]), var_tot[ex2], 1, n, (n2 - 1))
+            laburpenite <- c(laburpenite, paste0("ITE_", var_tot[ex]), var_tot[ex2], 01, n, (n2 - 1))
             n <- n2
             n2 <- n + N
             h <- h + 1

@@ -18,7 +18,7 @@ naive_ace <- function(allsim, dataset, exposures, delta = c(0, 1), ic_dis = "IC"
     for (ex in 1:len_exp) {
         h <- h + 1
         df_ace[h, "Group"] <- paste0(exposures[ex])
-        stp <- st[st$Group == "CC" & st$Case == exposures[ex], c(4, 5)]
+        stp <- st[st$Group == "ACE" & st$Case == exposures[ex], c(4, 5)]
         from <- as.numeric(stp[1, 1])
         to <- as.numeric(stp[2, 2])
         mdata <- allsim[from:to, ]
