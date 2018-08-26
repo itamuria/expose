@@ -1,4 +1,4 @@
-#' Dose response effect each case
+#' Extract the information from the simulation data frame to analyse the dose response effects
 #'
 #' @param allsim dataset with all simulations values
 #' @param dataset dataset with all variables
