@@ -25,5 +25,6 @@ Imports:
     xgboost,
     Rcpp
 RoxygenNote: 6.1.0
-LinkingTo: 
-    Rcpp
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
