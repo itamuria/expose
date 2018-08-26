@@ -1,4 +1,4 @@
-#' Extract the information from the simulation data frame to analyse the individual causal effects
+#' Extract the information from the simulation data frame to analyse the individual conditional expectation
 #'
 #' @param allsim dataset with all simulations values
 #' @param dataset dataset with all variables

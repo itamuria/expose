@@ -35,6 +35,7 @@ This package will facilitate multi-pollutant analysis of environmental epidemiol
 
 This package will help to unravel the effects of chemical mixtures and their interactions in epidemiological studies. 
 
+# Reference:
 
 Youssef Oulhote, Marie-Abele Bind, Brent Coull, Chirag, Patel, Philippe Grandjean. 2017. Combining Ensemble Learning Techniques and G-Computation to Investigate Chemical Mixtures in Environmental Epidemiology Studies. Biorxiv. https://www.biorxiv.org/content/early/2017/06/30/147413.article-info
 
@@ -71,7 +72,6 @@ set.seed(22222)
 # Define parameters
 
 N <- dim(dtaset)[1]
-Outcome="Y4"
 seku <- seq(0,1,0.05)   #c(0,0.1,0.2,0.25,0.3,0.4,0.5,0.6,0.7,0.75,0.8,0.9,1)
 our.num.sim <- 5
 delta=c(1,0)
@@ -223,7 +223,7 @@ file_exp_name <- paste0("Y",h,"_NaiveAce.jpg")
 ggsave(file_exp_name)
 
 ###############################################################################################################
-# Dose Respond
+# Dose Response
 ###############################################################################################################
 
 
@@ -257,7 +257,7 @@ ggsave(file_exp_name)
 
 
 ###############################################################################################################
-# ice: individual causal effect
+# ice: individual conditional expectation
 ###############################################################################################################
 
 ice_res <- ice(allsim = simu[[1]], dataset = dtaset, dr = seku, squem = summary_table_lines, remove_extrem = FALSE)
