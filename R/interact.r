@@ -78,7 +78,7 @@ interact <- function(allsim, dataset, exposures, confounders, squem) {
     }
     azken_taula2 <- data.frame(matrix(NA, z2, 3))
     m1 <- apply(azken_taula[, -1], 1, mean)
-    m2 <- apply(azken_taula[, -1], 1, sd)
+    m2 <- apply(azken_taula[, -1], 1, stats::sd)
     azken_taula2 <- data.frame(azken_taula$Interaction, m1, m2)
     names(azken_taula2) <- c("Interaction", "Mean", "SD")
     return(azken_taula2)

@@ -17,12 +17,12 @@ naive_ace_ind <- function(allsim, dataset, ic_dis = "IC") {
     }
     m2 <- m2[-1]
     if (ic_dis == "IC") {
-        sdd <- sd(m2[-1])
+        sdd <- stats::sd(m2[-1])
         lci <- mean.res - sdd * 1.96
         uci <- mean.res + sdd * 1.96
     } else if (ic_dis == "dis") {
-        lci <- quantile(m2, 0.025)
-        uci <- quantile(m2, 0.975)
+        lci <- stats::quantile(m2, 0.025)
+        uci <- stats::quantile(m2, 0.975)
     }
     return(list(mean.res, lci, uci))
 }

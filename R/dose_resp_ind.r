@@ -22,7 +22,7 @@ dose_resp_ind <- function(allsim, dataset, dr = seq(0, 1, 0.1)) {
             m2 <- c(m2, m1)
         }
         m2 <- m2[-1]
-        se <- sd(m2)
+        se <- stats::sd(m2)
         sum_dr[g, 2] <- mean(m3)
         sum_dr[g, 3] <- se
         sum_dr[g, 1] <- paste0("DR_", dr[g])

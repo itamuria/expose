@@ -88,7 +88,7 @@ general_function <- function(dataset, exposures, confounders,
         for (f in sekuentzia) {
             h <- h + 1
             valor <- dataset[, exposures[s]]
-            per_value <- c(per_value, as.numeric(quantile(valor, f)))
+            per_value <- c(per_value, as.numeric(stats::quantile(valor, f)))
 
         }
 
