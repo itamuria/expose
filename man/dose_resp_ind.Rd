@@ -2,7 +2,7 @@
 % Please edit documentation in R/dose_resp_ind.r
 \name{dose_resp_ind}
 \alias{dose_resp_ind}
-\title{Dose response effect each case}
+\title{Extract the information from the simulation data frame to analyse the dose response effects}
 \usage{
 dose_resp_ind(allsim, dataset, dr = seq(0, 1, 0.1))
 }
@@ -17,5 +17,5 @@ dose_resp_ind(allsim, dataset, dr = seq(0, 1, 0.1))
 a data frame with dose response values
 }
 \description{
-Dose response effect each case
+Extract the information from the simulation data frame to analyse the dose response effects
 }

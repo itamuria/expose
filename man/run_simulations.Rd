@@ -2,7 +2,7 @@
 % Please edit documentation in R/run_simulations.r
 \name{run_simulations}
 \alias{run_simulations}
-\title{Simulations}
+\title{This function run all the simulations based on the structure of the basic data frame.}
 \usage{
 run_simulations(dataset, exposures, confounders, libraries, outcomes,
   num.sim = 50, delta = c(0, 1), dr, newdata, show_times = FALSE,
@@ -44,7 +44,7 @@ run_simulations(dataset, exposures, confounders, libraries, outcomes,
 a list with 4 objects: a data frame with all simulations, risk and coefficients of the crossvalidation and the time of the proces.
 }
 \description{
-Simulations
+This function run all the simulations based on the structure of the basic data frame.
 }
 \details{
 libraries could be SL if we don't select nothing or 'SL.glm', 'SL.glm.interaction','SL.glmnet', 'SL.gam','SL.xgboost','SL.polymars','SL.randomForest'

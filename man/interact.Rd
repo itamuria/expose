@@ -2,7 +2,7 @@
 % Please edit documentation in R/interact.r
 \name{interact}
 \alias{interact}
-\title{Interactions}
+\title{Extract the information from the simulation data frame to analyse the interaction effects}
 \usage{
 interact(allsim, dataset, exposures, confounders, squem)
 }
@@ -21,5 +21,5 @@ interact(allsim, dataset, exposures, confounders, squem)
 data frame with interaction values
 }
 \description{
-Interactions
+Extract the information from the simulation data frame to analyse the interaction effects
 }

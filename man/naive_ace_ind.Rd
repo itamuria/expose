@@ -2,7 +2,7 @@
 % Please edit documentation in R/naive_ace_ind.r
 \name{naive_ace_ind}
 \alias{naive_ace_ind}
-\title{Naive Average causal effect each case}
+\title{Extract the information from the simulation data frame to analyse the interaction effects}
 \usage{
 naive_ace_ind(allsim, dataset, ic_dis = "IC")
 }
@@ -17,5 +17,5 @@ naive_ace_ind(allsim, dataset, ic_dis = "IC")
 a data frame with naive ace and confident intervals
 }
 \description{
-Naive Average causal effect each case
+Extract the information from the simulation data frame to analyse the interaction effects
 }

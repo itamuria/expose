@@ -2,7 +2,7 @@
 % Please edit documentation in R/general_function.r
 \name{general_function}
 \alias{general_function}
-\title{General function}
+\title{General function create the basic structure for the analysis}
 \usage{
 general_function(dataset, exposures, confounders, outcomes, delta, dr)
 }
@@ -23,8 +23,8 @@ general_function(dataset, exposures, confounders, outcomes, delta, dr)
 a list with 2 objects. One is the dataframe with all the values and the other is a summary of the groups and the corresponding rows in the first dataframe.
 }
 \description{
-General function
+General function create the basic structure for the analysis
 }
 \details{
-libraries could be SL if we don't select nothing or 'SL.glm', 'SL.glm.interaction','SL.glmnet', 'SL.gam','SL.xgboost','SL.polymars','SL.randomForest'
+.
 }

@@ -2,9 +2,10 @@
 % Please edit documentation in R/naive_ace.r
 \name{naive_ace}
 \alias{naive_ace}
-\title{Naive Average causal effect all together}
+\title{Extract the information from the simulation data frame to analyse the naive causal effects}
 \usage{
-naive_ace(allsim, dataset, exposures, delta = c(0, 1), ic_dis = "IC", st)
+naive_ace(allsim, dataset, exposures, delta = c(0, 1), ic_dis = "IC",
+  st)
 }
 \arguments{
 \item{allsim}{dataset with all simulations values}
@@ -23,5 +24,5 @@ naive_ace(allsim, dataset, exposures, delta = c(0, 1), ic_dis = "IC", st)
 a data frame with naive ace and confident intervals
 }
 \description{
-Naive Average causal effect all together
+Extract the information from the simulation data frame to analyse the naive causal effects
 }

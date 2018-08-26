@@ -2,7 +2,7 @@
 % Please edit documentation in R/dose_resp.r
 \name{dose_resp}
 \alias{dose_resp}
-\title{Dose reponse effect all together}
+\title{Extract the information from the simulation data frame to analyse the dose response effects}
 \usage{
 dose_resp(allsim, dataset, exposures, dr, ic_dis = "IC", st)
 }
@@ -23,5 +23,5 @@ dose_resp(allsim, dataset, exposures, dr, ic_dis = "IC", st)
 a data frame with dose response values
 }
 \description{
-Dose reponse effect all together
+Extract the information from the simulation data frame to analyse the dose response effects
 }

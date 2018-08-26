@@ -2,7 +2,7 @@
 % Please edit documentation in R/ice.r
 \name{ice}
 \alias{ice}
-\title{Individual causal effect}
+\title{Extract the information from the simulation data frame to analyse the individual causal effects}
 \usage{
 ice(allsim, dataset, dr = seq(0, 1, 0.1), squem, remove_extrem = FALSE)
 }
@@ -21,5 +21,5 @@ ice(allsim, dataset, dr = seq(0, 1, 0.1), squem, remove_extrem = FALSE)
 a data frame with interactions
 }
 \description{
-Individual causal effect
+Extract the information from the simulation data frame to analyse the individual causal effects
 }
