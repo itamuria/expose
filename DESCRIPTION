@@ -1,7 +1,7 @@
 Package: expose
 Type: Package
 Title: Multiple effects of chemicals in Environmental Epidemiology
-Version: 0.0.002
+Version: 0.0.2
 Author: person("Ibon", "Tamayo", email = "ibontama@gmail.com", role = c("aut", "cre"))
 Maintainer: Ibon Tamayo <itamuria@gmail.com>
 Description: An R Package for Estimating Individual and Average Joint Effects of Chemical Mixtures, 
@@ -12,5 +12,17 @@ LazyData: true
 Imports:
     repmis,
     ggplot2,
-    RColorBrewer
+    RColorBrewer,
+    ggplot2, 
+    repmis,
+    SuperLearner, 
+    gam,
+    splines,
+    foreach,
+    glmnet,
+    Matrix,
+    nnet,
+    polspline,
+    e1071,
+    xgboost
 RoxygenNote: 6.0.1

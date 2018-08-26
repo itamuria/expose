@@ -1,4 +1,4 @@
-#' Simulations
+#' This function run all the simulations based on the structure of the basic data frame. 
 #'
 #' @param dataset dataset with all variables
 #' @param exposures a vector with exposures

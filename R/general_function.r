@@ -1,4 +1,4 @@
-#' General function
+#' General function create the basic structure for the analysis
 #'
 #' @param dataset dataset with all variables
 #' @param exposures a vector with exposures
@@ -8,7 +8,7 @@
 #' @param dr a vector with dose response values
 #' @return a list with 2 objects. One is the dataframe with all the values and the other is a summary of the groups and the corresponding rows in the first dataframe.
 #' @export
-#' @details libraries could be SL if we don't select nothing or 'SL.glm', 'SL.glm.interaction','SL.glmnet', 'SL.gam','SL.xgboost','SL.polymars','SL.randomForest'
+#' @details .
 
 general_function <- function(dataset, exposures, confounders,
                              outcomes, delta, dr) {
