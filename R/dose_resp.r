@@ -7,6 +7,16 @@
 #' @param ic_dis choose between ic (interval confidences) and dis (distribution)
 #' @param st summary table from general function
 #' @return a data frame with dose response values
+#' @examples
+#' data(expose_data)
+#' data(simu)
+#' data(gen)
+#' delta=c(1,0)
+#' seku <- seq(0,1,0.05)
+#' Exposures<- c('Var1','Var2','Var3','Var4','Var5')
+#' summary_table_lines <- gen[[2]]
+#' drr.grp <- dose_resp (allsim = simu[[1]], dataset = expose_data, st = summary_table_lines,
+#'                       dr = seku, exposures = Exposures) 
 #' @export
 
 

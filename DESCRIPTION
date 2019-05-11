@@ -1,11 +1,11 @@
 Package: expose
 Type: Package
-Title: Multiple effect estimation of chemicals in Environmental Epidemiology
-Version: 0.0.2
-Author: person("Ibon", "Tamayo", email = "ibontama@gmail.com", role = c("aut", "cre"))
-Maintainer: Ibon Tamayo <itamuria@gmail.com>
-Description: An R Package for Estimating Individual and Average Joint Effects of Chemical Mixtures, 
-    Dose-Response Relationships, and Potential Interactions in Environmental Epidemiology
+Title: Multiple Effect Estimation of Chemicals in Environmental Epidemiology
+Version: 0.0.3
+Authors@R: person("Ibon", "Tamayo", email = "itamuria@gmail.com",
+                  role = c("aut", "cre"))
+Description: Estimate individual and average joint effects of chemical mixtures, dose-response relationships, and potential interactions in environmental epidemiology.
+    The visualization of interactions and the plotting of all the objects. For more information please, check next work: Youssef Oulhote, Marie-Abele Bind, Brent Coull, Chirag, Patel, Philippe Grandjean (2017) <arXiv:https://www.biorxiv.org/content/early/2017/06/30/147413.article-info>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -23,8 +23,9 @@ Imports:
     polspline,
     e1071,
     xgboost,
-    Rcpp
-RoxygenNote: 6.1.0
+    Rcpp,
+    stats
+RoxygenNote: 6.1.1
 Suggests: knitr,
     rmarkdown
 VignetteBuilder: knitr

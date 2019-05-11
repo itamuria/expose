@@ -20,8 +20,8 @@
 #' @details libraries could be SL if we don't select nothing or 'SL.glm', 'SL.glm.interaction','SL.glmnet', 'SL.gam','SL.xgboost','SL.polymars','SL.randomForest'
 
 
-run_simulations <- function(dataset, exposures, confounders, libraries, outcomes, num.sim = 50, delta = c(0, 1), dr, newdata,
-    show_times = FALSE, show_num_sim = TRUE, save_time = FALSE, verbose = FALSE, family = "gaussian", method = "method.NNLS") {
+run_simulations <- function(dataset, exposures, confounders, libraries, outcomes, num.sim = 50, delta = c(0, 1), dr, 
+    newdata, show_times = FALSE, show_num_sim = TRUE, save_time = FALSE, verbose = FALSE, family = "gaussian", method = "method.NNLS") {
     if (class(exposures) %in% c("numeric", "integer")) {
         exposures <- names(dataset[, exposures])
     }
@@ -31,8 +31,8 @@ run_simulations <- function(dataset, exposures, confounders, libraries, outcomes
     if (class(outcomes) %in% c("numeric", "integer")) {
         outcomes <- names(dataset[, outcomes])
     }
-
-
+    
+    
     len_libraries <- length(libraries)
     if (len_libraries == 0) {
         simple_libr <- c("")
@@ -43,59 +43,58 @@ run_simulations <- function(dataset, exposures, confounders, libraries, outcomes
     }
     len_libraries <- length(libraries)
     var_tot <- c(exposures, confounders)
-
+    
     d <- dataset
     N <- dim(d)[1]
     len_new <- dim(newdata)[1]
-
+    
     big_matrix <- data.frame(matrix(NA, len_new, num.sim))
-
+    
     risk <- data.frame(libraries, matrix(NA, len_libraries, num.sim))
     coef <- data.frame(libraries, matrix(NA, len_libraries, num.sim))
-
-    if (save_time == TRUE)
+    
+    if (save_time == TRUE) 
         time3 <- NA
     t1 <- Sys.time()
-
+    
     if (show_num_sim == TRUE) {
         for (i in 1:num.sim) {
             print(paste0("Run number ", i, "/", num.sim))
-
-
+            
             idx <- sample(1:N, N, replace = T)
             dataset <- d[idx, ]
-
-            modelo <- SuperLearner::SuperLearner(Y = dataset[, outcomes], X = dataset[, var_tot], SL.library = libraries, newX = newdata[,
-                var_tot], verbose = verbose, family = family, method = method)
+            
+            modelo <- SuperLearner::SuperLearner(Y = dataset[, outcomes], X = dataset[, var_tot], SL.library = libraries, 
+                newX = newdata[, var_tot], verbose = verbose, family = family, method = method)
             risk[, i + 1] <- modelo$cvRisk
             coef[, i + 1] <- modelo$coef
             big_matrix[, i] <- modelo$SL.predict[, 1]
         }
-
+        
     } else {
         print(paste0("Start running - ", Sys.time()))
         for (i in 1:num.sim) {
             idx <- sample(1:N, N, replace = T)
             dataset <- d[idx, ]
-
-            modelo <- SuperLearner::SuperLearner(Y = dataset[, outcomes], X = dataset[, var_tot], SL.library = libraries, newX = newdata[,
-                var_tot], verbose = verbose, family = family, method = method)
+            
+            modelo <- SuperLearner::SuperLearner(Y = dataset[, outcomes], X = dataset[, var_tot], SL.library = libraries, 
+                newX = newdata[, var_tot], verbose = verbose, family = family, method = method)
             risk[, i + 1] <- modelo$cvRisk
             coef[, i + 1] <- modelo$coef
             big_matrix[, i] <- modelo$SL.predict[, 1]
         }
         print(paste0("Finished - ", Sys.time()))
     }
-
+    
     if (show_times == TRUE) {
         t2 <- Sys.time()
         print(t2 - t1)
-        if (save_time == TRUE)
+        if (save_time == TRUE) 
             time3 <- c(time3, t2 - t1)
     }
-
+    
     fecha <- format(Sys.time(), "%Y%m%d%X")
     fecha <- gsub(":", "", fecha)
     return(list(big_matrix, risk, coef, time_proc = time3))
-
+    
 }

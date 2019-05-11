@@ -2,7 +2,7 @@
 % Please edit documentation in R/ice.r
 \name{ice}
 \alias{ice}
-\title{Extract the information from the simulation data frame to analyse the individual causal effects}
+\title{Extract the information from the simulation data frame to analyse the individual conditional expectation}
 \usage{
 ice(allsim, dataset, dr = seq(0, 1, 0.1), squem, remove_extrem = FALSE)
 }
@@ -21,5 +21,16 @@ ice(allsim, dataset, dr = seq(0, 1, 0.1), squem, remove_extrem = FALSE)
 a data frame with interactions
 }
 \description{
-Extract the information from the simulation data frame to analyse the individual causal effects
+Extract the information from the simulation data frame to analyse the individual conditional expectation
+}
+\examples{
+data(expose_data)
+data(simu)
+data(gen)
+delta=c(1,0)
+seku <- seq(0,1,0.05)
+Exposures<- c('Var1','Var2','Var3','Var4','Var5')
+summary_table_lines <- gen[[2]]
+ice_res <- ice(allsim = simu[[1]], dataset = expose_data, dr = seku, 
+squem = summary_table_lines, remove_extrem = FALSE)
 }

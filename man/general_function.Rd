@@ -28,3 +28,17 @@ General function create the basic structure for the analysis
 \details{
 .
 }
+\examples{
+data(expose_data)
+N <- dim(expose_data)[1]
+Outcome='Y4'
+seku <- seq(0,1,0.05)   #c(0,0.1,0.2,0.25,0.3,0.4,0.5,0.6,0.7,0.75,0.8,0.9,1)
+our.num.sim <- 5
+delta=c(1,0)
+Exposures<- c('Var1','Var2','Var3','Var4','Var5')
+Confounders<- c('sex')
+Outcome <- c('Y4')
+gen <- general_function (dataset = expose_data, exposures = Exposures, 
+                         confounders = Confounders,
+                         outcomes = Outcome[1], delta=delta, dr = seku)
+}

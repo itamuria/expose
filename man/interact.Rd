@@ -23,3 +23,14 @@ data frame with interaction values
 \description{
 Extract the information from the simulation data frame to analyse the interaction effects
 }
+\examples{
+data(expose_data)
+data(simu)
+data(gen)
+delta=c(1,0)
+seku <- seq(0,1,0.05)
+Exposures<- c('Var1','Var2','Var3','Var4','Var5')
+summary_table_lines <- gen[[2]]
+it <- interact (allsim = simu[[1]], dataset = expose_data,exposures = Exposures,
+confounders = c('sex'), squem = summary_table_lines)
+}

@@ -26,3 +26,14 @@ a data frame with naive ace and confident intervals
 \description{
 Extract the information from the simulation data frame to analyse the naive causal effects
 }
+\examples{
+data(expose_data)
+data(simu)
+data(gen)
+delta=c(1,0)
+Exposures<- c('Var1','Var2','Var3','Var4','Var5')
+summary_table_lines <- gen[[2]]
+ace.df.g <- naive_ace (allsim = simu[[1]], dataset = expose_data,
+ic_dis = 'IC', st = summary_table_lines,
+exposures = Exposures, delta = delta)
+}
