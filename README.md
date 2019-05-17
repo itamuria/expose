@@ -1,4 +1,13 @@
 # expose
+[![Build Status](https://travis-ci.org/itamuria/expose.svg?branch=master)](https://travis-ci.org/itamuria/expose)
+[![CRAN Status](https://www.r-pkg.org/badges/version/expose)](https://cran.r-project.org/package=expose)
+[![codecov](https://codecov.io/gh/itamuria/expose/branch/master/graph/badge.svg)](https://codecov.io/gh/itamuria/expose)
+[![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
+
+
+![](man/img/rdoc.png)
+
+
  Introduction: 
  
 Although the general population is exposed to multiple chemicals, most environmental epidemiology studies consider each chemical separately when estimating the adverse effects of environmental exposures, partly because of the lack of software accessible to environmental epidemiologists. 
