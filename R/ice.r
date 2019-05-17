@@ -68,7 +68,7 @@ ice <- function(allsim, dataset, dr = seq(0, 1, 0.1), squem, remove_extrem = FAL
             
         }
     }
-    
+    names(dataset)[1] <- "id"
     ice <- merge(dataset, allpcb, by = "id")
     
     seku_breaks <- as.character(sort(as.numeric(as.character(unique(ice$X)))))
