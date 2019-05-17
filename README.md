@@ -4,6 +4,11 @@
 [![codecov](https://codecov.io/gh/itamuria/expose/branch/master/graph/badge.svg)](https://codecov.io/gh/itamuria/expose)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 
+[![Travis Build Status](https://travis-ci.org/tidyverse/ggplot2.svg?branch=master)](https://travis-ci.org/tidyverse/ggplot2) 
+[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/itamuria/expose?branch=master&svg=true)](https://ci.appveyor.com/project/itamuria/expose) 
+[![Coverage Status](https://img.shields.io/codecov/c/github/itamuria/expose/master.svg)](https://codecov.io/github/itamuria/expose?branch=master) 
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/expose)](https://cran.r-project.org/package=expose)
+
 
 ![](man/img/rdoc.png)
 
