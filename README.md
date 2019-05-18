@@ -2,11 +2,7 @@
 [![CRAN Status](https://www.r-pkg.org/badges/version/expose)](https://cran.r-project.org/package=expose)
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/itamuria/expose?branch=master&svg=true)](https://ci.appveyor.com/project/itamuria/expose) 
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![codecov](https://codecov.io/gh/itamuria/expose/branch/master/graph/badge.svg)](https://codecov.io/gh/itamuria/expose)
-[![Travis Build Status](https://travis-ci.org/itamuria/expose.svg?branch=master)](https://travis-ci.org/itamuria/expose) 
-[![Coverage Status](https://img.shields.io/codecov/c/github/itamuria/expose/master.svg)](https://codecov.io/github/itamuria/expose?branch=master) 
-[![wercker status](https://app.wercker.com/status/a79cb66214e92b957fb9335a0987ec43/s/master "wercker status")](https://app.wercker.com/project/byKey/a79cb66214e92b957fb9335a0987ec43)
-[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
+[![Github All Releases](https://img.shields.io/github/downloads/itamuria/expose/total.svg)]()
 
 
 
