@@ -3,7 +3,7 @@
 [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/itamuria/expose?branch=master&svg=true)](https://ci.appveyor.com/project/itamuria/expose) 
 [![](https://cranlogs.r-pkg.org/badges/expose)](https://cran.r-project.org/package=expose)
 [![lifecycle](https://img.shields.io/badge/lifecycle-maturing-blue.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![Github All Releases](https://img.shields.io/github/downloads/itamuria/expose/total.svg)]()
+
 
 
 
