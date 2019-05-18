@@ -6,6 +6,7 @@
 [![Travis Build Status](https://travis-ci.org/itamuria/expose.svg?branch=master)](https://travis-ci.org/itamuria/expose) 
 [![Coverage Status](https://img.shields.io/codecov/c/github/itamuria/expose/master.svg)](https://codecov.io/github/itamuria/expose?branch=master) 
 [![wercker status](https://app.wercker.com/status/a79cb66214e92b957fb9335a0987ec43/s/master "wercker status")](https://app.wercker.com/project/byKey/a79cb66214e92b957fb9335a0987ec43)
+[![Github All Releases](https://img.shields.io/github/downloads/atom/atom/total.svg)]()
 
 
 
