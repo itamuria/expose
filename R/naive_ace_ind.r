@@ -7,6 +7,7 @@
 #' @export
 
 naive_ace_ind <- function(allsim, dataset, ic_dis = "IC") {
+  dataset <- data.frame(dataset)
     N <- dim(dataset)[1]
     sim <- dim(allsim)[2]
     m2 <- NA

@@ -7,6 +7,7 @@
 #' @export
 
 dose_resp_ind <- function(allsim, dataset, dr = seq(0, 1, 0.1)) {
+  dataset <- data.frame(dataset)
     N <- dim(dataset)[1]
     sim <- dim(allsim)[2]
     size <- length(dr)

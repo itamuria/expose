@@ -19,7 +19,7 @@
 #' @export
 
 ice <- function(allsim, dataset, dr = seq(0, 1, 0.1), squem, remove_extrem = FALSE) {
-    
+  dataset <- data.frame(dataset)
     ext <- squem[grep("DR_", squem$Group), ]
     
     hm_pol <- unique(ext$Case)

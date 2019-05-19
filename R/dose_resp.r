@@ -21,6 +21,7 @@
 
 
 dose_resp <- function(allsim, dataset, exposures, dr, ic_dis = "IC", st) {
+  dataset <- data.frame(dataset)
     st2 <- as.character(st[, 1])
     un_dr <- unique(grep("DR_", st2, value = TRUE))
     len_exp <- length(exposures)

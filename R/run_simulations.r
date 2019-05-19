@@ -31,7 +31,7 @@ run_simulations <- function(dataset, exposures, confounders, libraries, outcomes
     if (class(outcomes) %in% c("numeric", "integer")) {
         outcomes <- names(dataset[, outcomes])
     }
-    
+  dataset <- data.frame(dataset)
     
     len_libraries <- length(libraries)
     if (len_libraries == 0) {

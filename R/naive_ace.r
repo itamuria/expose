@@ -21,6 +21,7 @@
 
 
 naive_ace <- function(allsim, dataset, exposures, delta = c(0, 1), ic_dis = "IC", st) {
+  dataset <- data.frame(dataset)
     len_exp <- length(exposures)
     df_ace <- data.frame(matrix(NA, len_exp, 4))
     names(df_ace) <- c("Group", "Mean", "ICa", "ICb")

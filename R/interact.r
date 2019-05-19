@@ -20,6 +20,7 @@
 
 interact <- function(allsim, dataset, exposures, confounders, squem) {
     
+  dataset <- data.frame(dataset)
     N <- dim(dataset)[1]
     sim <- dim(allsim)[2]
     

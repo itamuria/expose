@@ -36,6 +36,7 @@ general_function <- function(dataset, exposures,
         outcomes <- names(dataset[, outcomes])
     }
 
+  dataset <- data.frame(dataset)
     len_exp <- length(exposures)
     len_cof <- length(confounders)
     var_tot <- c(exposures, confounders)
